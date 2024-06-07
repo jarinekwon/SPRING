@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.lgy.spring_2_1.Calculation"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_1.Circle"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_1.Rectangle"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_1.Draw"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_2.Season"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_2.Won2dollar"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_3.Three"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_3.DivAndRemains"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_4.Rectangle"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_4.Median"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Multiple"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_5.Triangle"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_6.Asterisk"/>
+    <fullyQualifiedTypeName name="com.lgy.spring_ex2_6.Capital"/>
+</qualifiedTypeNameHistroy>

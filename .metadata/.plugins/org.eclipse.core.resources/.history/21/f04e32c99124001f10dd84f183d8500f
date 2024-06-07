@@ -1,0 +1,18 @@
+package com.lgy.spring_ex2_1;
+
+public class Draw {
+	public static void main(String[] args) {
+		
+		Circle cdraw = new Circle();
+		
+		cdraw.setRadius(10);
+		
+		Rectangle rdraw = new Rectangle();
+		
+		rdraw.setWidth(20);
+		rdraw.setHeight(30);
+		
+		cdraw.carea();
+		rdraw.rarea();
+	}
+}

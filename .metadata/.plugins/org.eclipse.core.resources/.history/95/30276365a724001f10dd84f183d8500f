@@ -1,0 +1,28 @@
+package com.lgy.spring_ex2_6;
+
+
+public class Capital {
+	private String s;
+
+	public String getS() {
+		return s;
+	}
+
+	public void setS(String s) {
+		this.s = s;
+	}
+
+
+
+	public void process() {
+		char c = s.charAt(0);
+		
+		for (char i = c; i >= 1; i--) {
+			for (int j = i; j < 0; j++) {
+				System.out.print(c);
+			}
+			System.out.println();
+		}
+	}
+
+}
