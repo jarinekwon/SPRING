@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="circle" class="com.lgy.spring_3_2.Circle"></bean>
+	
+	<bean id="myCircle" class="com.lgy.spring_3_2.MyCircle">
+		<property name="circle">
+			<ref bean="circle"/>
+		</property>
+		<property name="radius" value="10"></property>
+	</bean>
+</beans>
