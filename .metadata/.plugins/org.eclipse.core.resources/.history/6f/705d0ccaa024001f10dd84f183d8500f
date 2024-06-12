@@ -1,7 +1,0 @@
-package com.lgy.spring_ex2_5;
-
-public class Triangle {
-	private int a;
-	private int b;
-	private int c;
-}
