@@ -3,18 +3,21 @@
 <aop-project name="spring_13_3"/>
 <aop-project name="spring_12_4"/>
 <aop-project name="spring_11_5"/>
-<aop-project name="spring_14_1"/>
-<aop-project name="spring_13_2"/>
-<aop-project name="spring_12_3"/>
+<aop-project name="board_jdbc_mysql"/>
 <aop-project name="spring_11_4"/>
+<aop-project name="spring_12_3"/>
+<aop-project name="spring_13_2"/>
+<aop-project name="spring_14_1"/>
 <aop-project name="spring_13_1_2"/>
 <aop-project name="board_mysql"/>
 <aop-project name="spring_11_6"/>
 <aop-project name="spring_11_1"/>
 <aop-project name="spring_10_1"/>
+<aop-project name="item_oracle"/>
 <aop-project name="spring_11_3"/>
 <aop-project name="spring_12_2"/>
 <aop-project name="spring_13_1"/>
+<aop-project name="mem_oracle"/>
 <aop-project name="spring_11_2"/>
 <aop-project name="spring_12_1"/>
 </aop-reference-model>
