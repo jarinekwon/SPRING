@@ -14,6 +14,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.PreparedStatementSetter;
 
 import com.lgy.board_jdbc_mysql.dto.BoardDTO;
 import com.lgy.board_jdbc_mysql.util.Constant;
@@ -142,7 +143,7 @@ public class BoardDAO {
 	}
 	
 	public BoardDTO contentView(String strID) {
-//		upHit(strID);
+		upHit(strID);
 		
 		String sql="select boardNo, boardName, boardTitle, boardContent, boardDate, boardHit from tbl_board where boardNo=" + strID;
 		return (BoardDTO) template.queryForObject(sql, new BeanPropertyRowMapper<BoardDTO>(BoardDTO.class));
@@ -186,8 +187,19 @@ public class BoardDAO {
 		return dto;
 		*/
 	}
-	/*
-	public void upHit(String boardNo) {
+	
+	public void upHit(final String boardNo) {
+		
+		String sql = "update tbl_board set boardHit=boardHit+1 where boardNo=?";
+		template.update(sql, new PreparedStatementSetter() {
+//		update -> sql update(PreparedStatementSetter 객체 사용)
+			@Override
+			public void setValues(PreparedStatement ps) throws SQLException {
+				ps.setInt(1, Integer.parseInt(boardNo));
+			}
+		});
+		
+		/*
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		String sql="";
@@ -209,9 +221,24 @@ public class BoardDAO {
 				se.printStackTrace();
 			}
 		}
+		*/
 	}
 	
-	public void modify(String boardNo, String boardName, String boardTitle, String boardContent) {
+	public void modify(final String boardNo, final String boardName, final String boardTitle, final String boardContent) {
+		
+		String sql="update tbl_board set boardName=?, boardTitle=?, boardContent=? where boardNo=?";
+		template.update(sql, new PreparedStatementSetter() {
+			
+			@Override
+			public void setValues(PreparedStatement ps) throws SQLException {
+				ps.setString(1, boardName);
+				ps.setString(2, boardTitle);
+				ps.setString(3, boardContent);
+				ps.setInt(4, Integer.parseInt(boardNo));
+			}
+		});
+		
+		/*
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		String sql="";
@@ -238,9 +265,22 @@ public class BoardDAO {
 				se.printStackTrace();
 			}
 		}
+		*/
 	}
 	
-	public void delete(String strID) {
+	public void delete(final String strID) {
+		
+		String sql="delete from tbl_board where boardNo=?";
+		template.update(sql, new PreparedStatementSetter() {
+//		update -> jdbc template 삭제 처리
+			
+			@Override
+			public void setValues(PreparedStatement ps) throws SQLException {
+				ps.setInt(1, Integer.parseInt(strID));
+			}
+		});
+		
+		/*
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		String sql="";
@@ -262,8 +302,8 @@ public class BoardDAO {
 				se.printStackTrace();
 			}
 		}
+		*/
 	}
-	*/
 }
 
 

@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="spring_13_3"/>
-<aop-project name="spring_12_4"/>
-<aop-project name="spring_11_5"/>
-<aop-project name="board_jdbc_mysql"/>
-<aop-project name="spring_11_4"/>
-<aop-project name="spring_12_3"/>
-<aop-project name="spring_13_2"/>
-<aop-project name="spring_14_1"/>
-<aop-project name="spring_13_1_2"/>
-<aop-project name="board_mysql"/>
-<aop-project name="spring_11_6"/>
-<aop-project name="spring_11_1"/>
-<aop-project name="spring_10_1"/>
-<aop-project name="item_oracle"/>
-<aop-project name="spring_11_3"/>
-<aop-project name="spring_12_2"/>
-<aop-project name="spring_13_1"/>
+<aop-project name="member_mybatis_oracle"/>
 <aop-project name="mem_oracle"/>
-<aop-project name="spring_11_2"/>
-<aop-project name="spring_12_1"/>
+<aop-project name="item_oracle"/>
+<aop-project name="board_std_mysql"/>
+<aop-project name="board_mybatis_mysql"/>
+<aop-project name="board_jdbc_mysql"/>
+<aop-project name="board_mysql"/>
+<aop-project name="item_jdbc_oracle"/>
+<aop-project name="member_jdbc_oracle"/>
+<aop-project name="item_mybatis_oracle"/>
+<aop-project name="item_std_oracle"/>
 </aop-reference-model>

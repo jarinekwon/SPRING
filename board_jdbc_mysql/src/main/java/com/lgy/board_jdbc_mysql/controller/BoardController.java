@@ -9,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.lgy.board_jdbc_mysql.service.BoardContentService;
+import com.lgy.board_jdbc_mysql.service.BoardDeleteService;
 import com.lgy.board_jdbc_mysql.service.BoardListService;
+import com.lgy.board_jdbc_mysql.service.BoardModifyService;
 import com.lgy.board_jdbc_mysql.service.BoardService;
 import com.lgy.board_jdbc_mysql.service.BoardWriteService;
 import com.lgy.board_jdbc_mysql.util.Constant;
@@ -75,8 +77,8 @@ public class BoardController {
 		log.info("@# modify");
 		
 		model.addAttribute("request", request);
-//		service = new BoardModifyService();
-//		service.execute(model);
+		service = new BoardModifyService();
+		service.execute(model);
 		
 		return "redirect:list";
 	}
@@ -86,8 +88,8 @@ public class BoardController {
 		log.info("@# delete");
 		
 		model.addAttribute("request", request);
-//		service = new BoardDeleteService();
-//		service.execute(model);
+		service = new BoardDeleteService();
+		service.execute(model);
 		
 		return "redirect:list";
 	}
