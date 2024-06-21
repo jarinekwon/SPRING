@@ -22,18 +22,17 @@ public class ItemController {
 	private ItemService service;
 	
 	@RequestMapping("/item_write")
-	public String item_write(@RequestParam HashMap<String, String> param) {
+	public String item_write() {
 		log.info("@# item_write");
-		
-		service.write(param);
 		
 		return "item_write";
 	}
 	
 	@RequestMapping("/write_result")
-	public String write_reuslt() {
+	public String write_reuslt(@RequestParam HashMap<String, String> param) {
 		log.info("@# wirte_result");
 		
+		service.write(param);
 		
 		return "write_result";
 	}
@@ -42,8 +41,8 @@ public class ItemController {
 	public String content_view(@RequestParam HashMap<String, String> param, Model model) {
 		log.info("@# content_view");
 		
-		ArrayList<ItemDTO> list = service.list();
-		model.addAttribute("content_view", list);
+		ArrayList<ItemDTO> dtos = service.list();
+		model.addAttribute("content_view", dtos);
 		
 		return "content_view";
 	}

@@ -7,6 +7,6 @@
         select name, price, description from mvc_product
     </select>
     <insert id="write">
-        insert into mvc_product(name, price, description) values (#{name}, #{price}, #{description})
+        insert into mvc_product(name, price, description) values(#{name}, #{price}, #{description})
     </insert>
 </mapper>

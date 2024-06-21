@@ -5,10 +5,6 @@ import java.util.HashMap;
 
 import com.lgy.item_std_oracle.dto.ItemDTO;
 
-
-
-
-
 public interface ItemDAO {
 	
 	public ArrayList<ItemDTO> list();	

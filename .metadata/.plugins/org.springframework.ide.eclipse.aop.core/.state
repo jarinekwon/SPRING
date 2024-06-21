@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model>
-<aop-project name="member_mybatis_oracle"/>
-<aop-project name="mem_oracle"/>
-<aop-project name="item_oracle"/>
-<aop-project name="board_std_mysql"/>
-<aop-project name="board_mybatis_mysql"/>
-<aop-project name="board_jdbc_mysql"/>
-<aop-project name="board_mysql"/>
-<aop-project name="item_jdbc_oracle"/>
-<aop-project name="member_jdbc_oracle"/>
-<aop-project name="item_mybatis_oracle"/>
-<aop-project name="item_std_oracle"/>
-</aop-reference-model>
+<aop-reference-model/>
